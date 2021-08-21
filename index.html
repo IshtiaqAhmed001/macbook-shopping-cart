@@ -34,55 +34,63 @@
                     </div>
                     <div class="memory-selection mb-5">
                         <h4>Memory</h4>
-                        <button type="button" class="btn btn-outline-secondary btn-lg">8GB unified memory</button>
-                        <button type="button" class="btn btn-outline-secondary btn-lg">16GB unified memory</button>
+                        <button id="memory-8gb-btn" type="button" class="btn btn-outline-secondary btn-lg">8GB
+                            unified memory</button>
+                        <button id="memory-16gb-btn" type="button" class="btn btn-outline-secondary btn-lg">16GB
+                            unified memory</button>
                     </div>
                     <div class="storage-selection mb-5">
                         <h4>Storage</h4>
-                        <button type="button" class="btn btn-outline-secondary btn-lg">256GB SSD storage</button>
-                        <button type="button" class="btn btn-outline-secondary btn-lg">512GB SSD storage</button>
-                        <button type="button" class="btn btn-outline-secondary btn-lg">1TB SSD storage</button>
+                        <button id="storage-256gb-btn" type="button" class="btn btn-outline-secondary btn-lg">256GB SSD
+                            storage</button>
+                        <button id="storage-512gb-btn" type="button" class="btn btn-outline-secondary btn-lg">512GB SSD
+                            storage</button>
+                        <button id="storage-1tb-btn" type="button" class="btn btn-outline-secondary btn-lg">1TB SSD
+                            storage</button>
                     </div>
                     <div class="delivery-selection mb-5">
                         <h4>Choose your delivery option</h4>
-                        <button type="button" class="btn btn-outline-secondary btn-lg">Friday,Aug 25 FREE Prime
+                        <button id="free-delivery-btn" type="button" class="btn btn-outline-secondary btn-lg">Friday,Aug
+                            25 FREE Prime
                             Delivery</button>
-                        <button type="button" class="btn btn-outline-secondary btn-lg">Friday,Aug 21 Delivery charge
+                        <button id="paid-delivery-btn" type="button" class="btn btn-outline-secondary btn-lg">Friday,Aug
+                            21 Delivery charge
                             $20</button>
                     </div>
                     <div class="sub-total-calculation w-50">
                         <div class="d-flex justify-content-between mb-3">
                             <h4 class="fw-bolder">Best Price</h4>
-                            <h4 class="fw-bolder">$<span>1299</span></h4>
+                            <h4 class="fw-bolder">$<span id="best-price">1299</span></h4>
                         </div>
                         <hr>
                         <div class="d-flex justify-content-between mb-3">
                             <h4 class="fw-bolder">Extra Memory Cost</h4>
-                            <h4 class="fw-bolder">$<span>0</span></h4>
+                            <h4 class="fw-bolder">$<span id="extra-memory-cost">0</span></h4>
                         </div>
                         <hr>
                         <div class="d-flex justify-content-between mb-3">
                             <h4 class="fw-bolder">Extra Storage Cost</h4>
-                            <h4 class="fw-bolder">$<span>0</span></h4>
+                            <h4 class="fw-bolder">$<span id="extra-storage-cost">0</span></h4>
                         </div>
                         <hr>
                         <div class="d-flex justify-content-between mb-3">
                             <h4 class="fw-bolder">Delivery Charge</h4>
-                            <h4 class="fw-bolder">$<span>0</span></h4>
+                            <h4 class="fw-bolder">$<span id="delivery-charge">0</span></h4>
                         </div>
                         <hr size="5">
                         <div class="d-flex justify-content-between mb-3">
                             <h4 class="fw-bolder">Total Price</h4>
-                            <h4 class="fw-bolder">$<span>1299</span></h4>
+                            <h4 class="fw-bolder">$<span id="sub-total">1299</span></h4>
                         </div>
                         <hr>
                         <div class="promo-section">
                             <h4>Add Promo Code</h4>
                             <div class="input-group mb-3">
 
-                                <input type="text" class="form-control" placeholder=""
+                                <input id="promo-input" type="text" class="form-control" placeholder=""
                                     aria-label="Example text with button addon" aria-describedby="button-addon1">
-                                <button class="btn btn-danger" type="button" id="button-addon1">Apply</button>
+                                <button id="promo-button" class="btn btn-danger" type="button"
+                                    id="button-addon1">Apply</button>
                             </div>
                         </div>
                     </div>
@@ -91,7 +99,7 @@
         </section>
         <section class="container total-calculation">
             <hr>
-            <h1 class="text-center">Total: $<span>1299</span></h1>
+            <h1 class="text-center">Total: $<span id="total-price">1299</span></h1>
         </section>
     </main>
 
