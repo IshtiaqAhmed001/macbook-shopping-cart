@@ -52,8 +52,10 @@ function subTotal() {
     const deliveryChargeAmount = parseFloat(deliveryChargeFieldText);
 
     const subTotalField = document.getElementById('sub-total');
+    const totalField = document.getElementById('total-price');
     const totalCalculation = bestPriceAmount + extraMemoryCostAmount + extraStorageCostAmount + deliveryChargeAmount;
     subTotalField.innerText = totalCalculation;
+    totalField.innerText = totalCalculation;
 }
 
 // handle memory selection 
@@ -88,4 +90,19 @@ document.getElementById('free-delivery-btn').addEventListener('click', function 
 document.getElementById('paid-delivery-btn').addEventListener('click', function () {
     deliveryCharge('paid');
     subTotal();
+});
+
+// handle promo code 
+document.getElementById('promo-button').addEventListener('click', function () {
+    const promoInput = document.getElementById('promo-input').value;
+    if (promoInput == 'stevekaku') {
+        const totalField = document.getElementById('total-price');
+        const totalAmount = parseFloat(totalField.innerText);
+        const discount = (20 / 100) * totalAmount;
+
+        totalField.innerText = totalAmount - discount;
+
+        // disabling promo button after applying promo code
+        document.getElementById('promo-button').setAttribute('disabled', true);
+    }
 });
